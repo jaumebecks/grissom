@@ -6,3 +6,6 @@ push:
 
 mongo:
 	docker-compose up -d mongo
+
+shell:
+	docker-compose run --rm --entrypoint ipython python
