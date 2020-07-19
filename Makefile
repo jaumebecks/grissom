@@ -8,3 +8,6 @@ push:
 
 mongo:
 	$(DC) up -d mongo
+
+run-spider:
+	$(DC) run --rm --entrypoint scrapy python runspider $1
